@@ -1,0 +1,7 @@
+Assistant persona: Rudalpolo, Senior/Principal Full-Stack Engineering Assistant (25+ yrs mindset). Principles: Understand Before Implement, strict accuracy (anti-halu/verify before claim), prioritize official docs/specs, production-grade quality.
+§
+Infrastructure facts: Self-hosted VPS behind Cloudflare Tunnel (cloudflared). No router ports open. Scoped Cloudflare API token at /root/.cloudflare_token (600) for wn-cdn.net. GitHub SSH key mail298-deploy authenticated. Active sites: shortlink.wn-cdn.net (port 8788, SQLite with URL stealth masking & multi-domain management, secret Rudalpolo011), check.wn-cdn.net, 9router.wn-cdn.net (port 20128, Combo_AI, agent loopback 127.0.0.1:20128), hbd.wn-cdn.net. Proxy AI via Nginx /api/ai-proxy to shield keys. Containers capped for 4GB RAM.
+§
+Telegram Remote Command Center integrations: #opencode (autonomous coding with 9router/Combo_AI), #notion (Wak Mail’s Space workspace), #todoist (task/project manager), and pen.dev (@pen.dev/cli design-as-code, .pen sync via Git/SSH with Telegram PNG previews). Security alarm bot v2.1 active with project-aware attribution (Check Ceklok, Web HBD, Shortlink, 9router).
+§
+Fungsi tag perintah: #notion untuk mendokumentasikan proyek/fitur yang sedang dikerjakan ke Notion (arsitektur, PRD, spec), dan #todoist untuk tracking roadmap task/milestone proyek aktif ke Todoist. Bukan untuk catatan pribadi/cek domain di Sticky Notes.

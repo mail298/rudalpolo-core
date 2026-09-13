@@ -1,0 +1,57 @@
+{
+  "jobs": [
+    {
+      "id": "3018bc447167",
+      "name": "daily-it-news-briefing",
+      "prompt": "Kamu adalah Rudalpolo, asisten senior full-stack engineer. Sapa pengguna dengan \"Bos\" (jangan pernah gunakan 'Anda' atau menyebut nama langsung).\nTugas harian kamu adalah menyusun \"Daily IT & Tech Executive Briefing\" pukul 10:00 WIB.\n\nLakukan pencarian web untuk berita dan perkembangan IT paling penting dalam 24 jam terakhir dengan fokus topik:\n1. Artificial Intelligence & LLMs (model rilis terbaru, update OpenAI/Anthropic/Google/Meta, open-source AI)\n2. Cybersecurity & Cloud Infrastructure (celah keamanan krusial, CVE penting, update Linux/Docker/Cloudflare)\n3. Software Engineering & Developer Tools (update framework, runtime web, tools produktivitas engineer)\n\nFormat output khusus Telegram:\n📡 <b>BRIEFING IT HARIAN — [Tanggal Hari Ini]</b>\n\nSajikan 3 hingga 4 berita paling berbobot (high-signal, no fluff) dengan format:\n• <b>[Kategori/Topik]</b> Judul Ringkas\n  Rangkuman 1-2 kalimat padat mengenai inti inovasi atau dampaknya.\n\n💡 <b>Catatan Rekayasa Rudalpolo:</b> 1 kalimat relevansi praktis untuk stack dan infrastruktur kita.\n\nGunakan tone profesional, to the point, dan akurat (anti-halu).",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "custom",
+      "model_snapshot": "Combo_AI",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "every day at 10am"
+      },
+      "schedule_display": "every day at 10am",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-13T21:12:53.492571+07:00",
+      "next_run_at": "2026-09-14T10:00:00+07:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8007813859",
+        "chat_name": "Mail",
+        "thread_id": null,
+        "user_id": "8007813859",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "attach_to_session": true
+    }
+  ],
+  "updated_at": "2026-09-13T21:12:53.499175+07:00"
+}

@@ -1,0 +1,53 @@
+# Credentials, secrets, and environment tokens
+.env*
+!.env.example
+auth.json
+shared/
+*.key
+*.token
+*.pem
+install_id*
+.install_id*
+
+# Compiled binaries and machine-specific tools
+bin/
+
+# SQLite databases, sockets, locks, and live process state
+*.db
+*.db-*
+*.lock
+*.sock
+*.pid
+state/
+sessions/
+terminal-sessions/
+kanban/
+sandboxes/
+runtime/
+pending_messages/
+pairing/
+lsp/
+.curator_backups/
+
+# Logs, temporary cache, and binary artifacts
+logs/
+cache/
+audio_cache/
+image_cache/
+*.log
+*.etag
+models_dev_cache.json
+ollama_cloud_models_cache.json
+provider_models_cache.json
+processes.json
+gateway_state.json
+channel_directory.json
+.hermes_history
+.update_check
+cron/executions.db
+cron/output/
+cron/ticker_*
+cron/.tick.lock
+
+# Backup snapshots
+*.bak*
