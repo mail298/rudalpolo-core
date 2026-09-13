@@ -1,4 +1,19 @@
 {
+  "agent-runtime-sync": {
+    "archived_at": null,
+    "created_at": "2026-09-13T14:28:00.086782+00:00",
+    "created_by": "agent",
+    "last_patched_at": null,
+    "last_reused_patch_generation": 0,
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 0,
+    "patch_generation": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "claude-design": {
     "archived_at": null,
     "created_at": "2026-09-10T18:05:09.657178+00:00",
@@ -140,14 +155,14 @@
     "created_by": null,
     "last_patched_at": "2026-09-08T08:55:18.466431+00:00",
     "last_reused_patch_generation": 2,
-    "last_used_at": "2026-09-13T14:13:05.383561+00:00",
-    "last_viewed_at": "2026-09-13T14:13:05.371504+00:00",
+    "last_used_at": "2026-09-13T14:27:31.259375+00:00",
+    "last_viewed_at": "2026-09-13T14:27:31.251696+00:00",
     "patch_count": 2,
     "patch_generation": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 51,
-    "view_count": 51
+    "use_count": 52,
+    "view_count": 52
   },
   "seo-engineering": {
     "archived_at": null,
@@ -155,14 +170,14 @@
     "created_by": null,
     "last_patched_at": null,
     "last_reused_patch_generation": 0,
-    "last_used_at": "2026-09-13T14:13:18.343009+00:00",
-    "last_viewed_at": "2026-09-13T14:13:18.334722+00:00",
+    "last_used_at": "2026-09-13T14:27:43.265059+00:00",
+    "last_viewed_at": "2026-09-13T14:27:43.223218+00:00",
     "patch_count": 0,
     "patch_generation": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "systematic-debugging": {
     "archived_at": null,

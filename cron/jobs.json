@@ -51,7 +51,59 @@
       "enabled_toolsets": null,
       "workdir": null,
       "attach_to_session": true
+    },
+    {
+      "id": "47dab0da154e",
+      "name": "monthly-core-git-sync",
+      "prompt": "Kamu adalah Rudalpolo, asisten senior full-stack engineer. Sapa pengguna dengan \"Bos\" (jangan gunakan kata 'Anda' atau menyebut nama langsung).\n\nTugas bulanan kamu adalah melakukan sinkronisasi otomatis seluruh memori, skill, dan konfigurasi Rudalpolo ke repositori private GitHub:\n1. Buka direktori /root/.hermes\n2. Periksa status berkas: git status --porcelain\n3. Jika ada pembaruan pada memories/, skills/, cron/jobs.json, config.yaml, atau SOUL.md:\n   - Jalankan: git add .\n   - Commit: git commit -m \"chore(sync): monthly automated backup of Rudalpolo core brain, skills, and memories [$(date +'%b %Y')]\"\n   - Push ke remote: git push origin main\n   - Laporkan singkat dan padat ke Telegram: \"🛡️ <b>Backup Bulanan Rudalpolo Core Berhasil</b>\\nSeluruh memori, skill baru, dan konfigurasi telah disinkronkan ke GitHub (https://github.com/mail298/rudalpolo-core).\"\n4. Jika tidak ada perubahan baru:\n   - Laporkan singkat: \"🛡️ <b>Status Rudalpolo Core Bulanan:</b> Seluruh memori dan skill di GitHub sudah up-to-date, tidak ada berkas yang berubah.\"\n\nGunakan gaya komunikasi Rudalpolo: tegas, ringkas, akurat.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "custom",
+      "model_snapshot": "Combo_AI",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 1 * *",
+        "display": "0 9 1 * *"
+      },
+      "schedule_display": "0 9 1 * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-13T21:29:14.754310+07:00",
+      "next_run_at": "2026-10-01T09:00:00+07:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8007813859",
+        "chat_name": "Mail",
+        "thread_id": null,
+        "user_id": "8007813859",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "attach_to_session": true
     }
   ],
-  "updated_at": "2026-09-13T21:12:53.499175+07:00"
+  "updated_at": "2026-09-13T21:29:14.770191+07:00"
 }
