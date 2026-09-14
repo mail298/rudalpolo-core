@@ -56,6 +56,24 @@
 
 ---
 
-## 5. Komitmen Penanganan Keamanan (Security Watchdog)
+## 5. Standardisasi Healthcheck (Zero-Downtime Execution)
+* **Status:** SELESAI (12/12 Container Berhasil Diperbarui).
+* **Metode Eksekusi:** Konfigurasi via Coolify REST API v1 (`PATCH /applications/{uuid}`) tanpa restart container live.
+* **Daftar Aplikasi yang Distandarisasi:**
+  1. `doyangaming` (Port 3000, Interval 30s)
+  2. `jeepgaming` (Port 3000, Interval 30s)
+  3. `tsgaming` (Port 3000, Interval 30s)
+  4. `spreadsheets_management` (Port 8686, Interval 30s)
+  5. `blocklist-api` (Port 8666, Interval 30s)
+  6. `DOYANTOTO` (Port 3000, Interval 30s)
+  7. `AMP_Templet` (Port 3000, Interval 30s)
+  8. `apiscriping` (Port 3000, Interval 30s)
+  9. `dashboard_dinamis` (Port 3000, Interval 30s)
+  10. `game-slot` (Port 3000, Interval 30s)
+  11. `google-driver-cloud` (Port 80, Interval 30s)
+  12. `portofoilio` (Port 3000, Interval 30s)
+* **Hasil:** Seluruh 37 aplikasi di Coolify kini memiliki sistem healthcheck terstandarisasi (25 native compose + 12 Coolify API probe). Task [P2] di Todoist telah ditutup.
+
+## 6. Komitmen Penanganan Keamanan (Security Watchdog)
 * Mengunci aturan operasional: **Tidak ada perubahan pada data eksisting, database, maupun konfigurasi aplikasi yang sedang berjalan.**
 * Cupid AI bertindak sebagai watchdog untuk threat monitoring otomatis, origin shielding, dan resource health alert pada VPS Coolify terbaru.
