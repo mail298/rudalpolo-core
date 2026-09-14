@@ -96,3 +96,23 @@
   - Status Sehat: **43 Sehat (100% HIJAU / Healthy)**.
   - Status Gagal: **0 (Zero Unhealthy)**.
 
+---
+
+## 8. Pembersihan File Sampah & Reclaim Storage VPS Host (Zero-Disruption)
+* **Waktu Eksekusi:** Senin, 14 September 2026
+* **Sasaran Pembersihan:**
+  1. Systemd journal archived logs (`journalctl --vacuum-size=200M`) ➔ Mengurangi log usang dari **4.0 GB** menjadi **193 MB** (bebas ~3.8 GB).
+  2. Docker build cache yang tidak terpakai (`docker builder prune -f`) ➔ Bebas **360 MB**.
+  3. Package cache sistem (`apt-get clean`) ➔ Bebas **240 MB**.
+  4. Log rotasi usang terkompresi (`/var/log/*.gz`, `/var/log/*.1`) ➔ Bebas **131 MB**.
+  5. Berkas sementara / backup gatus (`/root/gatus/*.bak`, `*.tmp`) ➔ Bersih.
+* **Kebijakan Keamanan Terlindungi:**
+  - Volume database Docker (`9drive`, `db_dashboard`, `db_portofolio`, dll.) **100% UTUH** dan tidak disentuh (`docker volume prune` tidak dijalankan).
+  - Seluruh 7 database internal tetap `running:healthy`.
+  - Seluruh 62 kontainer tetap aktif tanpa gangguan.
+* **Hasil Efisiensi Disk:**
+  - Storage Tersedia Sebelum: **49 GB** (Terpakai 49%).
+  - Storage Tersedia Sesudah: **54 GB** (Terpakai 44%).
+  - Total Ruang Bersih Berhasil Dipulihkan: **~5.0 GB Storage NVMe**.
+
+
