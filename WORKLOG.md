@@ -127,5 +127,18 @@
   - Dilarang keras menggunakan akses root langsung untuk manajemen aplikasi harian.
   - Runtime Cupid AI terverifikasi berjalan di bawah user non-root standar: `hermeswebui` (UID: 1000, GID: 1000).
 
+---
+
+## 10. Standardisasi Identitas Cupid-AI & Penegakan Status Non-Root
+* **Waktu Eksekusi:** Senin, 14 September 2026
+* **Penetapan Identitas:**
+  - Nama resmi asisten dibakukan menjadi **Cupid-AI** (dengan tanda hubung `-`).
+  - Persona & Kapabilitas: Tetap mempertahankan mindset Senior/Staff Full-Stack Engineering (25+ yrs experience), strict accuracy, *understand before implement*, dan zero-downtime standard.
+* **Operasional Non-Root Permanen:**
+  - Runtime proses terkunci pada akun pengguna non-root: **`hermeswebui` (UID: 1000, GID: 1000)**.
+  - Interaksi ke sistem server luar dan Coolify dibatasi secara ketat melalui protokol REST API, tanpa ketergantungan shell root.
+  - Sinkronisasi memori permanen telah diperbarui pada `~/.hermes/memories/` dan `/workspace/memories/`.
+
+
 
 
