@@ -115,4 +115,17 @@
   - Storage Tersedia Sesudah: **54 GB** (Terpakai 44%).
   - Total Ruang Bersih Berhasil Dipulihkan: **~5.0 GB Storage NVMe**.
 
+---
+
+## 9. Pembaruan Kredensial Coolify API & Penegakan Kebijakan Non-Root
+* **Waktu Eksekusi:** Senin, 14 September 2026
+* **Pembaruan API Token:**
+  - Token Coolify API berhasil diperbarui menjadi token terbaru: `2|XBzx...dfc4d` di `~/.hermes/.env`.
+  - Verifikasi REST API v1: **Status 200 OK** (berhasil membaca 7 proyek, 37 aplikasi, dan 7 database).
+* **Penegakan Kebijakan Non-Root (Least Privilege):**
+  - Seluruh alur kerja dan eksekusi deployment, restart, dan monitoring wajib melalui **Coolify REST API resmi**.
+  - Dilarang keras menggunakan akses root langsung untuk manajemen aplikasi harian.
+  - Runtime Cupid AI terverifikasi berjalan di bawah user non-root standar: `hermeswebui` (UID: 1000, GID: 1000).
+
+
 
